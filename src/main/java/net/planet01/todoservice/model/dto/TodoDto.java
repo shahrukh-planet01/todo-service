@@ -12,6 +12,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TodoDto {
+    private Long id;
     private String task;
     private String description;
     private Long userId;

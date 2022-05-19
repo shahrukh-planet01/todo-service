@@ -17,10 +17,10 @@ public class Todo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "employee_code")
+    @Column(name = "task")
     private String task;
 
-    @Column(name = "name")
+    @Column(name = "description",columnDefinition = "text")
     private String description;
 
     @Column(name = "is_completed",columnDefinition = "bit default 0")
